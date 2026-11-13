@@ -3,8 +3,8 @@ from transformers import pipeline
 
 # Load the text classification model pipeline
 classifier = pipeline("text-classification",
-                      model='distilbert/distilbert-base-uncased-finetuned-sst-2-english',
-                      return_all_scores=True)
+                      model="distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+                      top_k=None)
 
 # Streamlit application title
 st.title("Text Classification for you")
